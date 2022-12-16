@@ -21,15 +21,8 @@ img {
 }
 
 aside {
-    /* flex-grow: 1; */
     padding: 10px;
     width: 25%;
-}
-
-.right {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 .left a {
@@ -52,26 +45,26 @@ li:not(:last-child) {
     margin-top: 20px;
 }
 
-ul {
+ul, ol {
     list-style-type: lower-greek;
 }
 
 @media only screen and (max-width: 1000px) {
     main {
         order: 1;
-        width: 100%;
-
+        width: calc(100% - 30px);
     }
 
     .left {
         order: 2;
-        width: 100%;
     }
 
     .right {
         order: 3;
-        width: 100%;
+    }
 
+    aside {
+        width: calc(100% - 20px);
     }
 
     body {
